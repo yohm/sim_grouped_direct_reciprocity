@@ -36,8 +36,5 @@ target_link_libraries(main_mem1_finite_mut PRIVATE Eigen3::Eigen lapacke OpenMP:
 add_executable(main_mem1_finite_mut_analysis main_mem1_finite_mut_analysis.cpp ${SOURCE_FILES})
 target_link_libraries(main_mem1_finite_mut_analysis PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
 
-add_executable(main_mem1_low_mut main_mem1_low_mut.cpp ${SOURCE_FILES})
-target_link_libraries(main_mem1_low_mut PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
-
 add_executable(main_mem1_low_mut_MC main_mem1_low_mut_MC.cpp ${SOURCE_FILES})
 target_link_libraries(main_mem1_low_mut_MC PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
