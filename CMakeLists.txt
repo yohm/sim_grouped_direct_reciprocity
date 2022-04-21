@@ -24,11 +24,11 @@ target_link_libraries(test_StrategyM3 PRIVATE Eigen3::Eigen lapacke)
 add_executable(test_StrategySpace test_StrategySpace.cpp StrategySpace.hpp)
 target_link_libraries(test_StrategySpace PRIVATE Eigen3::Eigen lapacke)
 
-add_executable(test_MultiLevelEvoGame test_GroupedEvoGame.cpp GroupedEvoGame.hpp ${SOURCE_FILES})
-target_link_libraries(test_MultiLevelEvoGame PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
+add_executable(test_GroupedEvoGame test_GroupedEvoGame.cpp GroupedEvoGame.hpp ${SOURCE_FILES})
+target_link_libraries(test_GroupedEvoGame PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
 
-add_executable(test_MultiLevelEvoGameLowMutation test_GroupedEvoGameLowMutation.cpp ${SOURCE_FILES})
-target_link_libraries(test_MultiLevelEvoGameLowMutation PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
+add_executable(test_GroupedEvoGameLowMutation test_GroupedEvoGameLowMutation.cpp ${SOURCE_FILES})
+target_link_libraries(test_GroupedEvoGameLowMutation PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
 
 add_executable(main_mem1_finite_mut main_mem1_finite_mut.cpp ${SOURCE_FILES})
 target_link_libraries(main_mem1_finite_mut PRIVATE Eigen3::Eigen lapacke OpenMP::OpenMP_CXX)
