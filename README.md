@@ -2,6 +2,8 @@
 
 Simulation codes for evolutionary games of direct reciprocity in memory-1 strategy space in group-structured populations.
 
+[Murase, Y., Hilbe, C. & Baek, S.K. Evolution of direct reciprocity in group-structured populations. Sci Rep 12, 18645 (2022)](https://www.nature.com/articles/s41598-022-23467-4)
+
 ## Build
 
 Lapack and cmake is necessary as a prerequisite.
